@@ -1,0 +1,50 @@
+{echo:JS::import('dialog?skin=brief');}
+{echo:JS::import('dialogtools');}
+{echo:JS::import('form');}
+{echo:JS::import('validator');}
+{set:$config = Config::getInstance();$sms_config = $config->get('sms');}
+<h2 class="page_title">{$node_index['name']}</h2>
+<div class="form2">
+    <form name="config_form" method="post" action="{url:/admin/config/group/sms}">
+        <dl class="lineD">
+            <dt>短信发送方式：</dt>
+            <dd>
+                <select name="sms_sendtype">
+                    <option value="dxb" selected="">赛邮云短信</option>
+                </select>
+            </dd></dl>
+        <dl class="lineD">
+            <dt>赛邮云短信Appid：</dt>
+            <dd>
+                <input name="sms_account" pattern="required" type="text" id="textfield" value="">
+                <label>还没有注册账号？<a target="_blank" href="https://www.mysubmail.com/chs/account/login#/signup">立即注册</a></label>
+            </dd></dl>
+
+        <dl class="lineD">
+            <dt>赛邮云短信Appkey：</dt>
+            <dd>
+                <input name="sms_password" pattern="required" type="password" id="textfield" value="{$sms_config['sms_password']}">
+                <label>赛邮云短信Appkey</label>
+            </dd></dl>
+
+        <dl class="lineD">
+            <dt>赛邮云短信签名：</dt>
+            <dd>
+                <input name="sms_sing" pattern="required" type="text" id="textfield" value="">
+                <label>赛邮云短信签名</label>
+            </dd>
+        </dl>
+        <div class="center">
+            {token:key=form}
+            <input type="submit" name="submit" class="button action fn" value="确 定">
+        </div>
+    </form>
+</div>
+<script>
+    {if:isset($message)}
+        art.dialog.tips('<p class="success">{$message}</p>');
+    {/if}
+    var form = new Form('config_form');
+    var data = {echo:JSON::encode($config->get('sms'))};
+    form.init(data);
+</script>
