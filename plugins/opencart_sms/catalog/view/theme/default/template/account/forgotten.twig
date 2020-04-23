@@ -1,0 +1,171 @@
+{{ header }}
+<div id="account-forgotten" class="container">
+	{{ include(helper.template('_partial/breadcrumb')) }}
+	{% if error_warning %}
+		<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+		</div>
+	{% endif %}
+	<div class="row">{{ column_left }}
+		{% if column_left and column_right %}
+			{% set class = 'col-sm-6' %}
+		{% elseif column_left or column_right %}
+			{% set class = 'col-sm-9' %}
+		{% else %}
+			{% set class = 'col-sm-12' %}
+		{% endif %}
+		<div id="content" class="{{ class }}">{{ content_top }}
+			<h1>{{ heading_title }}</h1>
+			<p>{{ text_email }}</p>
+
+			<ul class="nav nav-tabs">
+				<li id="tab-email" {{ register_type != 'mobile' ? 'class="active"' }}><a href="#tab-general"
+																						 data-toggle="tab">EMAIL找回</a>
+				</li>
+				<li id="tab-mobile" {{ register_type == 'mobile' ? 'class="active"' }}><a href="#tab-general"
+																						  data-toggle="tab">手机号找回</a>
+				</li>
+			</ul>
+
+			<form action="{{ action }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+				<fieldset class="{{ register_type == 'mobile' ? 'hidden' }} email">
+					<legend class="email">{{ text_your_email }}</legend>
+					<div class="form-group required email">
+						<label class="col-sm-2 control-label" for="input-email">{{ entry_email }}</label>
+						<div class="col-sm-10">
+							<input type="text" name="email" value="{{ email }}" placeholder="{{ entry_email }}"
+								   id="input-email" class="form-control"/>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset class="{{ register_type != 'mobile' ? 'hidden' }} mobile">
+					<legend class="mobile">您的手机号</legend>
+					<div class="form-group required mobile">
+						<label class="col-sm-2 control-label" for="input-telephone">手机号码</label>
+						<div class="col-sm-10">
+							<input type="tel" name="telephone" value="" placeholder="手机号码" id="input-telephone"
+								   class="form-control"/>
+							{% if error_telephone %}
+								<div class="text-danger">{{ error_telephone }}</div>
+							{% endif %} </div>
+					</div>
+					<div class="form-group required mobile">
+						<label class="col-sm-2 control-label" for="input-mobiles">短信验证码</label>
+						<div class="col-sm-10">
+							<input type="text" name="mobiles" value="" placeholder="短信验证码" id="input-mobiles"
+								   class="form-control"/>
+							<b class="huoqu" style="height: 28px; width: 120px;cursor: pointer;">获取验证码</b>
+							{% if error_mobiles %}
+								<div class="text-danger">{{ error_mobiles }}</div>
+							{% endif %} </div>
+					</div>
+				</fieldset>
+				<div class="form-group hidden">
+					<input type="text" name="type" value="{{ register_type }}" class="form-control"/>
+				</div>
+				<div class="buttons clearfix">
+					<div class="pull-right">
+						<input type="submit" value="{{ button_submit }}" class="btn btn-primary"/>
+					</div>
+					<div class="pull-left"><a href="{{ back }}" class="btn btn-default">{{ button_back }}</a></div>
+				</div>
+			</form>
+			{{ content_bottom }}</div>
+		{{ column_right }}</div>
+</div>
+
+<script type="text/javascript"><!--
+    $('#tab-email').on('click', function () {
+        $('input[name=\'email\']').parent().parent().removeClass('hidden');
+        $('input[name=\'telephone\']').parent().parent().addClass('hidden');
+        $('.mobile').addClass('hidden');
+        $('.email').removeClass('hidden');
+
+        $('input[name=\'telephone\']').val('');
+        $('input[name=\'type\']').val('email');
+    });
+    $('#tab-mobile').on('click', function () {
+        $('.mobile').removeClass('hidden');
+        $('.email').addClass('hidden');
+
+        $('input[name=\'telephone\']').parent().parent().removeClass('hidden');
+        $('input[name=\'email\']').parent().parent().addClass('hidden');
+        $('input[name=\'email\']').val('');
+        $('input[name=\'type\']').val('mobile');
+    });
+    //--></script>
+
+<script>
+    var time = 0; // 倒计时时间
+    var res = null; // 倒计时资源，释放时使用
+
+
+    /**
+     * 执行倒计时的方法
+     */
+    function sendTime() {
+        clearTimeout(res); // 先清空一下倒计时资源。
+        time--; // 倒计时时间递减。
+
+        // 如果倒计时到达0时，则恢复按钮原来的内容
+        if (time <= 0) {
+            time = "获取验证码";
+            $('.huoqu').text(time);
+            clearTimeout(res);
+            time = 0;
+            return;
+        }
+
+        // 倒计时的内容写到按钮里面
+        $('.huoqu').text("剩余" + time + "秒");
+        res = setTimeout("sendTime()", 1000);
+    }
+
+    /**
+     * 调用处
+     */
+    $(function () {
+        var flg = true; // 防止ajax重复提交的标记
+        /**
+         * 点击发送短信，触发事件
+         */
+        $('.huoqu').on("click", function () {
+            var mobile = $("#input-telephone").val();
+            var reg = /^1[3,4,5,7,8]\d{9}$/;
+            if (!reg.test(mobile)) {
+                alert('手机号码不正确');
+                return ret;
+            }
+            // 如果当前倒计时结束，则收集表单数据，并ajax提交到服务端
+            if (0 == time) {
+                var data = {"mobile": mobile};
+                var err = "";
+
+                if (flg == true) {
+                    flg = false;
+                    // ajax提交请求
+                    $.ajax({
+                        "url": "index.php?route=account/register/sendsms",
+                        "type": "post",
+                        "data": data,
+                        "dataType": "json",
+                        "success": function (msg) {
+                            if (msg == '0') {
+                                time = 60;
+                                sendTime();
+                                alert('短信发送成功！');
+                                ret = true;
+                            } else if (msg == '2') {
+                                alert('短信配置不正确');
+                            } else {
+                                alert(msg);
+                            }
+                        }
+                    });
+                }
+                return false;
+            }
+        });
+    });
+</script>
+
+{{ footer }}
