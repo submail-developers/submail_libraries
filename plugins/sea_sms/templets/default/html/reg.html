@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>用户注册-{seacms:sitename}</title>
+    <meta name="keywords" content="用户注册-{seacms:sitename}">
+    <meta name="description" content="用户注册-{seacms:sitename}">
+    {seacms:load public/include.html}
+    {seacms:load public/style.html}
+    <style type="text/css">.myui-user__head .btn-default{padding:15px}.myui-user__head .fa{font-size:16px;vertical-align:-1px}.myui-user__name{border-radius:5px;margin-bottom:20px;position:relative;padding:50px 30px;background-image:linear-gradient(135deg,#f761a1 10%,#8c1bab 100%)}.myui-user__name dt{float:left}.myui-user__name dd{margin-left:70px;padding-top:5px}.myui-user__name .logout{position:absolute;top:0;right:15px;margin-top:20px}.myui-user__form p{margin:0;padding:15px 0}.myui-user__form .xiang{display:inline-block;width:120px;padding-right:15px;text-align:right;color:#999}.myui-user__form input.form-control{display:inline-block;width:200px;margin-right:10px}.myui-login__form{width:350px;padding:30px;margin: 80px auto; box-shadow:0 2px 5px rgba(0,0,0,.1)}.myui-login__form li{margin:20px 0}@media (max-width:767px){.myui-user__head .btn-default{padding:15px 5px}.myui-user__name{padding:20px}.myui-user__name h3{margin:3px 0 5px;font-size:15px}.myui-user__head li a,.myui-vodlist__text li a{font-size:14px}.stui_login__form,.stui_login__form.active{width:100%;margin:0;padding:0}.myui-user__form p{padding:10px;font-size:14px}.myui-user__form .xiang{display:none}.myui-user__form .xiang.active{display:inline-block;width:auto;text-align:left}.myui-user__form input.form-control{width:100%;height:40px}.myui-user__form p .btn{width:120px}.myui-user__form .btn_unbind{display:inline-block;margin-top:5px}}</style>
+</head>
+<body>
+{seacms:top}
+<div class="myui-login__form clearfix">
+    <div class="myui-panel myui-panel-bg clearfix">
+        <div class="myui-panel-box clearfix">
+            <div class="myui-panel_bd">
+                <div class="head text-center">
+                    <a href="/"><img class="img-responsive" src="images/img/logo.png"/></a>
+                    <h5>注册新账号</h5>
+                </div>
+                <ul class="input-list">
+                    {register:viewRegister}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{seacms:foot}
+</body>
+<script>
+    var time = 0; // 倒计时时间
+    var res = null; // 倒计时资源，释放时使用
+    var sendNode = null; // 发送的按钮节点
+    //var diffTime = "<?php echo $diff; ?>"; // 由php计算的时间差的结果。所以就算用户刷新页面，倒计时还是存在的。
+
+    /**
+     * 执行倒计时的方法
+     */
+    function sendTime() {
+        clearTimeout(res); // 先清空一下倒计时资源。
+        time--; // 倒计时时间递减。
+
+        // 如果倒计时到达0时，则恢复按钮原来的内容
+        if (time <= 0) {
+            time = "获取验证码";
+            sendNode.text(time);
+            clearTimeout(res);
+            time = 0;
+            return;
+        }
+
+        // 倒计时的内容写到按钮里面
+        sendNode.text("剩余" + time + "秒");
+        res = setTimeout("sendTime()", 1000);
+    }
+
+    /**
+     * 调用处
+     */
+    $(function () {
+        sendNode = $("#get_code"); // 获取发送的节点
+        var flg = true; // 防止ajax重复提交的标记
+        // 在页面加载时，先判断一下是否上次倒计时未完成，由php计算，防止页面刷新，覆盖掉倒计时。
+
+        /**
+         * 点击发送短信，触发事件
+         */
+        sendNode.on("click", function () {
+            // 如果当前倒计时结束，则收集表单数据，并ajax提交到服务端
+            if (0 == time) {
+                var phoneNum = $("input[name='nickname']").val();
+                var myreg = /^[1][3,4,5,7,8][0-9]{9}$/;
+                if (!myreg.test(phoneNum)) {
+                    alert('手机号码不能为空或不正确');
+                    return false;
+                }
+                if (true) {
+                }
+                var code = $("input[name='validate']").val();
+                var data = {"code": code, "phone": phoneNum, "Obtain": 1};
+                var err = "";
+                if (flg == true) {
+                    flg = false;
+                    // ajax提交请求
+                    $.ajax({
+                        "url": "reg.php",
+                        "type": "post",
+                        "data": data,
+                        "dataType": "json",
+                        "success": function (msg) {
+                            $(".errmsg").text("");
+                            console.log(msg);
+                            if (msg == '发送成功') {
+                                time = 60;
+                                sendTime();
+                                alert("发送验证码成功！");
+
+                            } else {
+                                alert('短信发送失败，原因' + msg);
+                            }
+
+                            // 刷新图形验证码
+                            $("#code_img").click();
+                            flg = true;
+                        }
+                    });
+                }
+                return false;
+            }
+        });
+    });
+</script>
+</html>
+
+

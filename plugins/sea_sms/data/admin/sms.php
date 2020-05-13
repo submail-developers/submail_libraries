@@ -1,0 +1,1 @@
+<?php $smsbao_user = "赛邮云短信Appid"; $smsbao_pass = "赛邮云短信Appkey"; $smsbao_sign = "赛邮云短信签名";  ?>
