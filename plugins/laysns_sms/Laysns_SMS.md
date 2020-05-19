@@ -17,4 +17,3 @@ How to use
 6:测试手机注册 短信发送
 
 ![Submail](./markdown/2.png)
-
