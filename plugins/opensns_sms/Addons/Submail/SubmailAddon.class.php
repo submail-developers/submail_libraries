@@ -5,14 +5,14 @@ namespace Addons\Submail;
 use Common\Controller\Addon;
 
 /**
- * 短信宝短信插件
+ * 赛邮云通信短信插件
  */
 class SubmailAddon extends Addon
 {
     public $info = array(
         'name' => 'Submail',
         'title' => '赛邮云通信',
-        'description' => '短信宝短信插件 http://www.smsbao.com',
+        'description' => '赛邮云通信短信插件 https://www.mysubmail.com/',
         'status' => 1,
         'author' => 'submail-dev',
         'version' => '1.0.0'
