@@ -189,13 +189,12 @@ else
 	$t=$mainClassObj->parseTopicList($t);
 	$t=replaceCurrentTypeId($t,-444);
 	$t=$mainClassObj->parseIf($t);
-	if($cfg_feedback_ck=='1')
-	{$t=str_replace("{register:viewRegister}",viewRegister(),$t);}
-	else
-	{$t=str_replace("{register:viewRegister}",viewRegister2(),$t);}
-
+	if($cfg_feedback_ck=='1'){
+		$t	=	str_replace("{register:viewRegister}",viewRegister(),$t);
+	}else{
+		$t	=	str_replace("{register:viewRegister}",viewRegister2(),$t);
+	}
 	$t=str_replace("{register:main}",viewMain(),$t);
-
 	$t=str_replace("{seacms:runinfo}",getRunTime($t1),$t);
 	$t=str_replace("{seacms:member}",front_member(),$t);
 	echo $t;
