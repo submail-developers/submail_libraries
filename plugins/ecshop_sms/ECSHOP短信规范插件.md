@@ -8,9 +8,9 @@ How to use
 
 使用方法
 
-    把下载好的Ecshop赛邮云插件程序解压覆盖到网站根目录     
-    浏览器地址栏输入：http://域名/submail_install.php，成功后请将ECShop根目录下的smsbao_install.php文件删除
-    
+    把下载好的Ecshop赛邮云插件程序解压覆盖到网站根目录
+    浏览器地址栏输入：http://域名/submail_install.php，成功后请将ECShop根目录下的submail_install.php文件删除
+
 登录后台管理界面
 
     进入系统后台->系统设置->商店设置，填写赛邮云短信账号信息，保存

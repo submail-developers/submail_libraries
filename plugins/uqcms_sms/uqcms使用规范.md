@@ -7,7 +7,7 @@
 How to use
 
 使用方法
-    添加submail sql:    /admin/controls/submail.class.php          
+    添加submail sql:    /admin/controls/submail.class.php
     添加Submail sms-sdk:    /UQframework/api/sms_submail.class.php
 登录后台管理界面
 
