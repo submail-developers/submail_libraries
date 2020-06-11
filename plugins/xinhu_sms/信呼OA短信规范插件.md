@@ -17,7 +17,9 @@ How to use
 
 ![Submail](./markdown/1.png)
 
-                短信验证码模版编号：defyzm
-               流程短信催办模版编号：defnum
-               短信提醒给：审批人模版编号：default
-Linux环境请设置插件文件的读写权限（777）
+			短信验证码模版编号：defyzm
+			流程短信催办模版编号：defnum
+			短信提醒给：审批人模版编号：default
+
+
+	Linux环境请设置插件文件的读写权限（777）

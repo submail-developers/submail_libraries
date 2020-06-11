@@ -12,4 +12,3 @@ How to use
     3:进入后台->系统设置->网店设置->短信设置,填写赛邮云短信AppidAppkey，保存即可。
 
 ![Submail](./markdown/1.png)
-

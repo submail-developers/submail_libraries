@@ -1,8 +1,6 @@
 <?php
 
 /**
- * Smsbao.php
- * 短信宝插件安装，增加密码字段
  */
 include('./common.php');
 $sql_set['setting_key'] = 'sms_password';

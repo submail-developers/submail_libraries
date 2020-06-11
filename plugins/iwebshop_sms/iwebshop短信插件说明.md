@@ -1,9 +1,9 @@
 ## OVERVIEW
 
-### Iwebshop Plug-Ins Overview
+### IWEBSHOP Plug-Ins Overview
 
 ------
-	Iwebshop 短信插件
+	IWEBSHOP 短信插件
 How to use
 
 使用方法

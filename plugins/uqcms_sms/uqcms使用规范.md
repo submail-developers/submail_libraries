@@ -15,5 +15,3 @@ How to use
 ![Submail](./markdown/2.png)
 ![Submail](./markdown/3.png)
 ![Submail](./markdown/4.png)
-
-
