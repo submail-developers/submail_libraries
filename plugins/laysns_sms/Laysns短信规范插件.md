@@ -13,7 +13,10 @@ How to use
     4:进入后台，刷新缓存，选择系统配置->站点配置->服务设置->短信平台设置，选择，<br>
 ![Submail](./markdown/1.png)
 
-5:安装完成后将submail_install.php删除 
+5:安装完成后将submail_install.php删除
 6:测试手机注册 短信发送
 
 ![Submail](./markdown/2.png)
+
+
+[点击下载](https://github.com/submail-developers/laysns_sms/archive/master.zip)

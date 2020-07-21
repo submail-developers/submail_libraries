@@ -14,3 +14,6 @@ How to use
 
 
 ![Submail](./markdown/2.png)
+
+
+[点击下载](https://github.com/submail-developers/yzmcms_sms/archive/master.zip)

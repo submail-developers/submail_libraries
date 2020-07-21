@@ -23,3 +23,7 @@ How to use
 
 
 	Linux环境请设置插件文件的读写权限（777）
+
+
+[点击下载](https://github.com/submail-developers/xinhu_sms/archive/master.zip)
+

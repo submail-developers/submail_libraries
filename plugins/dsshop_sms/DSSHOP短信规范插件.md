@@ -16,3 +16,4 @@ How to use
         5：进入系统后台->设置->站点设置，网站名称即为短信签名。
 
 ![Submail](./markdown/2.png)
+[点击下载](https://github.com/submail-developers/dsshop_sms/archive/master.zip)

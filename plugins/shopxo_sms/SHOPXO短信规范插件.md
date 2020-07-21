@@ -14,3 +14,6 @@ How to use
 
 
 然后就完成了短信配置
+
+
+[点击下载](https://github.com/submail-developers/shopxo_sms/archive/master.zip)

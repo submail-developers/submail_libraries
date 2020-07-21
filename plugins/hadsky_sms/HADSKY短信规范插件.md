@@ -10,3 +10,5 @@ How to use
     把下载好的HADSKY 赛邮云短信插件程序解压覆盖到网站根目录
 
 ![Submail](./markdown/1.png)
+
+[点击下载](https://github.com/submail-developers/hadsky_sms/archive/master.zip)

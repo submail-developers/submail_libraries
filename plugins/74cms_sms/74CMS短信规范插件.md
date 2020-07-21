@@ -12,3 +12,6 @@ How to use
 
 ![Submail](./markdown/1.png)
 ![Submail](./markdown/2.png)
+
+
+[点击下载](https://github.com/submail-developers/74cms_sms/archive/master.zip)

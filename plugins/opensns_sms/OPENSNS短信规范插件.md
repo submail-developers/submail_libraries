@@ -1,4 +1,4 @@
-    
+
 ## OVERVIEW
 
 ### OPENSNS短信 Plug-Ins Overview
@@ -14,9 +14,13 @@ How to use
 ![Submail](./markdown/1.png)
 
 
-        
+
 ![Submail](./markdown/2.png)
 
 ![Submail](./markdown/3.png)
 
 ![Submail](./markdown/4.png)
+
+
+[点击下载](https://github.com/submail-developers/opensns_sms/archive/master.zip)
+

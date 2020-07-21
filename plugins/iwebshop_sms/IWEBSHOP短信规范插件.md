@@ -16,3 +16,5 @@ How to use
     点击安装 后
 
     配置好申请的appid 和 appkey
+
+[点击下载](https://github.com/submail-developers/iwebshop_sms/archive/master.zip)
