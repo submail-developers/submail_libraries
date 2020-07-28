@@ -2,9 +2,18 @@
 
 ### Tinyshop Plug-Ins Overview
 
+>TinyShop网店系统，国内商城系统及服务提供领先品牌。为传统企业及创业者提供零售网店及解决方案。
+
 ------
 
 How to use
+
+
+-	protected/classes/Menu.php
+-	protected/classes/Sms.php
+-	protected/controllers/ucenter.php
+-	protected/services/config.php
+-	protected/views/admin/config_sms.html
 
 使用方法
         1：本插件针对TinyShop系统3.1开发，安装前请仔细核对你的系统软件版本；
@@ -14,4 +23,4 @@ How to use
 
 ![Submail](./markdown/1.png)
 
-[点击下载](https://github.com/submail-developers/tinyshop_sms/archive/master.zip)
+[Github项目地址](https://github.com/submail-developers/tinyshop_sms)&nbsp;&nbsp;&nbsp;[点击下载](https://github.com/submail-developers/tinyshop_sms/archive/master.zip)

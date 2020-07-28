@@ -2,9 +2,14 @@
 
 ### Laysns_SMS Plug-Ins Overview
 
+>LaySNS是一款轻量级，基于ThinkPHP+Layui架构的集内容管理与社区互动为一体的综合建站系统。
+
 ------
 
 How to use
+
+-	application/admin/view/system_sms.html
+-	application/index/controller/Api.php
 
 使用方法
     1:首先将Laysns正确安装<br>
@@ -19,4 +24,4 @@ How to use
 ![Submail](./markdown/2.png)
 
 
-[点击下载](https://github.com/submail-developers/laysns_sms/archive/master.zip)
+[Github项目地址](https://github.com/submail-developers/laysns_sms)&nbsp;&nbsp;&nbsp;[点击下载](https://github.com/submail-developers/laysns_sms/archive/master.zip)

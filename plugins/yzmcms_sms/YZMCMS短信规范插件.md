@@ -2,9 +2,23 @@
 
 ### YZMCMS短信 Plug-Ins Overview
 
+>YzmCMS是一款基于YZMPHP开发的一套轻量级开源内容管理系统。
+
 ------
 	YZMCMS短信 短信插件
+
 How to use
+
+-	application/admin/view/system_set.html
+-	application/member/controller/index.class.php
+-	application/member/controller/reset.class.php
+-	application/member/view/default/register.html
+-	application/member/view/default/reset_mobile.html
+-	application/member/view/member_add.html
+-	application/member/view/member_list.html
+-	application/member/view/member_set.html
+-	common/function/system.func.php
+-	submail.php
 
 		插件内部分文件除submail.sql,submail.php,reset_mobile.html外，均为为对系统原文件的修改，如果你的系统经过二次开发，请先核对插件文件代码，否则请直接将插件内的文件覆盖原文件。
 
@@ -16,4 +30,4 @@ How to use
 ![Submail](./markdown/2.png)
 
 
-[点击下载](https://github.com/submail-developers/yzmcms_sms/archive/master.zip)
+[Github项目地址](https://github.com/submail-developers/yzmcms_sms/)&nbsp;&nbsp;&nbsp;[点击下载](https://github.com/submail-developers/yzmcms_sms/archive/master.zip)

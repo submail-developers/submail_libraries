@@ -2,9 +2,18 @@
 
 ### Opencart Plug-Ins Overview
 
+>A free shopping cart system. OpenCart is an open source PHP-based online e-commerce solution.
+
 ------
 
 How to use
+-	admin/controller/setting/setting.php
+-	admin/view/template/setting/setting.twig
+-	catalog/controller/account/forgotten.php
+-	catalog/controller/account/register.php
+-	catalog/model/account/customer.php
+-	catalog/view/theme/default/template/account/forgotten.twig
+-	catalog/view/theme/default/template/account/register.twig
 
 使用方法
     1：本插件针对opencart系统开发，版本号：V30，安装前请先核对你的系统软件版本。
@@ -14,5 +23,5 @@ How to use
 ![Submail](./markdown/1.png)
 
 
-[点击下载](https://github.com/submail-developers/opencart_sms/archive/master.zip)
+[Github项目地址](https://github.com/submail-developers/opencart_sms)&nbsp;&nbsp;&nbsp;[点击下载](https://github.com/submail-developers/opencart_sms/archive/master.zip)
 

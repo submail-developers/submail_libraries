@@ -1,10 +1,17 @@
 ## OVERVIEW
 
-### 信呼OA Plug-Ins Overview
+### XinhuOA Plug-Ins Overview
+
+>信呼-免费开源的办公OA系统，为各大中小企业通用型在线办公管理系统，精简，免费，开源，便捷方便使用的管理软件，让每个企业单位都有属于自己的办公系统，搭建自己企业单位网盘，搭建自己SAAS云办公平台
 
 ------
 	信呼OA 短信插件
 How to use
+
+-	include/chajian/smsbaoChajian.php
+-	webmain/system/sms/rock_sms_cog.php
+-	webmain/system/sms/smsAction.php
+-	submail_install.php
 
 使用方法
     把下载好的信呼OA 赛邮云短信插件程序解压覆盖到网站根目录
@@ -25,5 +32,6 @@ How to use
 	Linux环境请设置插件文件的读写权限（777）
 
 
-[点击下载](https://github.com/submail-developers/xinhu_sms/archive/master.zip)
+[Github项目地址](https://github.com/submail-developers/xinhu_sms/)&nbsp;&nbsp;&nbsp;[点击下载](https://github.com/submail-developers/xinhu_sms/archive/master.zip)
+
 
