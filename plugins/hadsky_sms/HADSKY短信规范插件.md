@@ -5,7 +5,8 @@
 >HadSky轻论坛是一款新生原创的PHP+MySQL开源系统，主要目标是实现轻、快、简、全，100%的原创开源系统。
 
 ------
-	HADSKY 短信插件
+HADSKY [官网地址](https://www.hadsky.com)
+
 How to use
 -	app/hadskycloudserver/phpscript/sms_send.php
 -	app/hadskycloudserver/setting.hst
