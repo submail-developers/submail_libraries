@@ -6,7 +6,9 @@
 >OpenSNS开源社交建站系统，包含微博、资讯、论坛、群组、问答、微店等模块，可适应行业多元化，领先级SNS社交app软件开发公司。
 
 ------
-	OPENSNS短信 短信插件
+
+OPENSNS  [官网地址](http://www.opensns.cn/)
+
 How to use
 -	Addons/Submail/config.php
 -	Addons/Submail/SubmailAddon.class.php

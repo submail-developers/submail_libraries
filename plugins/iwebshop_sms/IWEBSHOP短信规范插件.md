@@ -4,8 +4,10 @@
 
 >iWebShop是一款基于PHP语言及MYSQL数据库开发的B2B2C单用户和多用户开源免费的商城系统。
 
+
 ------
-	IWEBSHOP 短信插件
+IWEBSHOP  [官网地址](http://www.aircheng.com/)
+
 How to use
 
 -	classes/hsms.php

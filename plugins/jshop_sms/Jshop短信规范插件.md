@@ -5,7 +5,8 @@
 >Jshop小程序商城 ，是一款开源的支持可视化布局 为大中小企业提供移动电子商务优秀的解决方案.
 
 ------
-	Jshop 短信插件
+Jshop  [官网地址](https://www.jihainet.com/)
+
 How to use
 
 

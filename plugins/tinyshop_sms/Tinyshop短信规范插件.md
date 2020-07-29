@@ -6,8 +6,9 @@
 
 ------
 
-How to use
+Tinyshop  [官网地址](http://tinyrise.com/)
 
+How to use
 
 -	protected/classes/Menu.php
 -	protected/classes/Sms.php

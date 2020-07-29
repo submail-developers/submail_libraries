@@ -5,6 +5,7 @@
 >LaySNS是一款轻量级，基于ThinkPHP+Layui架构的集内容管理与社区互动为一体的综合建站系统。
 
 ------
+Laysns  [官网地址](https://bbs.laysns.com/)
 
 How to use
 

@@ -5,6 +5,7 @@
 >A free shopping cart system. OpenCart is an open source PHP-based online e-commerce solution.
 
 ------
+Opencart  [官网地址](http://www.opencartchina.com/)
 
 How to use
 -	admin/controller/setting/setting.php

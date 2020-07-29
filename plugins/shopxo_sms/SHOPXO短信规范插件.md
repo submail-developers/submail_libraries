@@ -5,9 +5,10 @@
 >ShopXO企业级B2C免费开源电商系统，为企业提供php商城系统、微信商城、小程序。
 
 ------
-	SHOPXO 短信插件
-How to use
 
+SHOPXO  [官网地址](https://shopxo.net/)
+
+How to use
 
 -	application/admin/view/default/sms/index.html
 -	application/admin/view/default/sms/nav.html

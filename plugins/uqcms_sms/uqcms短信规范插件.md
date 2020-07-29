@@ -6,6 +6,8 @@
 
 ------
 
+UQCMS  [官网地址](http://www.uqcms.com/)
+
 How to use
 -	admin/controls/submail.class.php
 -	UQframework/api/sms_submail.class.php

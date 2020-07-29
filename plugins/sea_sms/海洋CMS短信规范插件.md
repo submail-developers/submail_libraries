@@ -5,7 +5,8 @@
 >海洋cms是为解决站长核心需求而设计的内容管理系统。
 
 ------
-	海洋CMS 短信插件
+SeaCMS  [官网地址](https://www.seacms.net/)
+
 How to use
 -	data/admin/sms.php
 -	templets/default/html/reg.html

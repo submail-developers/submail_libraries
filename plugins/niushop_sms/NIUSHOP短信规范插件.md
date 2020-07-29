@@ -5,6 +5,7 @@
 >Niushop开源商城系统为新零售系统、多商户B2B2C、单用户B2C、开源微商城、电商小程序商城、o2o商城系统公司提供免费开源商城平台
 
 ------
+Niushop  [官网地址](https://www.niushop.com.cn/)
 
 How to use
 -	application/common.php

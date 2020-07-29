@@ -5,7 +5,8 @@
 >信呼-免费开源的办公OA系统，为各大中小企业通用型在线办公管理系统，精简，免费，开源，便捷方便使用的管理软件，让每个企业单位都有属于自己的办公系统，搭建自己企业单位网盘，搭建自己SAAS云办公平台
 
 ------
-	信呼OA 短信插件
+信呼  [官网地址](http://www.rockoa.com/)
+
 How to use
 
 -	include/chajian/smsbaoChajian.php
