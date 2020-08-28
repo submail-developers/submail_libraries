@@ -7,6 +7,8 @@
 ------
 Ecshop  [官网地址](https://www.ecshop.com)
 
+[V4.0](https://github.com/submail-developers/ecshop_sms/archive/master.zip)
+
 How to use
 -	includes/cls_sms.php
 -

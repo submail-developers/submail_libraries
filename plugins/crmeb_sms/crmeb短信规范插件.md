@@ -5,7 +5,9 @@
 >CRMEB是西安众邦科技旗下的基于客户关系管理和电子商务应用场景电销管理系统。
 ------
 CRMEB [官网地址](https://www.crmeb.com)
-	
+
+[v2.6.13](https://github.com/submail-developers/crmeb_sms/archive/master.zip)
+
 文件路径
 
 -	app/admin/controller/sms/SmsConfig.php

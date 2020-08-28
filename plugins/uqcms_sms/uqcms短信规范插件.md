@@ -7,6 +7,7 @@
 ------
 
 UQCMS  [官网地址](http://www.uqcms.com/)
+[V2.0.5](https://github.com/submail-developers/uqcms_sms/archive/master.zip)
 
 How to use
 -	admin/controls/submail.class.php

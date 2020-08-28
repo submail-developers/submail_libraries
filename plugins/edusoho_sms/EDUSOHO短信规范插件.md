@@ -8,6 +8,8 @@
 
 EduSoho [官网地址](http://www.edusoho.com)
 
+[V8.7.15](https://github.com/submail-developers/edusoho_sms/archive/master.zip)
+
 How to use
 -	app/Resources/views/admin/system/auth.html.twig
 -	src/AppBundle/Controller/Admin/UserSettingController.php

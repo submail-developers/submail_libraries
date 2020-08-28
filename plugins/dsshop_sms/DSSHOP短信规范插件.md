@@ -7,6 +7,9 @@
 ------
 DSSHOP  [官网地址](http://www.csdeshang.com/home/dsshop/index.html)
 
+[V6.0.4](https://github.com/submail-developers/dsshop_sms/archive/master.zip)
+
+
 How to use
 -	application/admin/controller/Message.php
 -	application/admin/view/message/mobile.html

@@ -6,6 +6,7 @@
 
 ------
 Opencart  [官网地址](http://www.opencartchina.com/)
+[V3.0.3.2](https://github.com/submail-developers/opencart_sms/archive/master.zip)
 
 How to use
 -	admin/controller/setting/setting.php

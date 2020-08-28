@@ -8,6 +8,7 @@
 
 YzmCMS  [官网地址](https://www.yzmcms.com/)
 
+[V5.7](https://github.com/submail-developers/yzmcms_sms/archive/master.zip)
 
 How to use
 

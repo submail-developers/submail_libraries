@@ -8,6 +8,8 @@
 
 SHOPXO  [官网地址](https://shopxo.net/)
 
+[V1.9.0](https://github.com/submail-developers/shopxo_sms/archive/master.zip)
+
 How to use
 
 -	application/admin/view/default/sms/index.html

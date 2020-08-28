@@ -7,6 +7,8 @@
 ------
 SeaCMS  [官网地址](https://www.seacms.net/)
 
+[V10.1](https://github.com/submail-developers/sea_sms/archive/master.zip)
+
 How to use
 -	data/admin/sms.php
 -	templets/default/html/reg.html

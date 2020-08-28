@@ -4,8 +4,9 @@
 
 >骑士CMS是基于PHP+MYSQL的免费网站管理系统，提供完善的人才招聘网站建设方案。
 
-
 74CMS  [官网地址](https://www.74cms.com)
+
+[v6.0.20](https://github.com/submail-developers/74cms_sms/archive/master.zip)
 
 How to use
 

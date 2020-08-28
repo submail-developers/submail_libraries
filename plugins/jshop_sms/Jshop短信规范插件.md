@@ -7,6 +7,8 @@
 ------
 Jshop  [官网地址](https://www.jihainet.com/)
 
+[V2.0.6](https://github.com/submail-developers/jshop_sms/archive/master.zip)
+
 How to use
 
 

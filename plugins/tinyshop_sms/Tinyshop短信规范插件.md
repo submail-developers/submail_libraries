@@ -8,6 +8,8 @@
 
 Tinyshop  [官网地址](http://tinyrise.com/)
 
+[V3.1.1](https://github.com/submail-developers/tinyshop_sms/archive/master.zip)
+
 How to use
 
 -	protected/classes/Menu.php

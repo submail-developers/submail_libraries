@@ -6,7 +6,9 @@
 
 ------
 DESTOON     [官网地址](https://www.destoon.com)
-	
+
+[V7.0](https://github.com/submail-developers/destoon_sms/archive/master.zip)
+
 How to use
 -	admin/template/setting.tpl.php
 -	admin/setting.inc.php

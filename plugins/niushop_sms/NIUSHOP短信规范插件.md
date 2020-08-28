@@ -6,6 +6,7 @@
 
 ------
 Niushop  [官网地址](https://www.niushop.com.cn/)
+[V4](https://github.com/submail-developers/niushop_sms/archive/master.zip)
 
 How to use
 -	application/common.php

@@ -8,6 +8,7 @@
 ------
 
 OPENSNS  [官网地址](http://www.opensns.cn/)
+[V6.2.0](https://github.com/submail-developers/opensns_sms/archive/master.zip)
 
 How to use
 -	Addons/Submail/config.php

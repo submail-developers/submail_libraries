@@ -5,6 +5,7 @@
 
 ------
 悟空CRM  [官网地址](https://www.5kcrm.com/)
+[V5.0](https://github.com/submail-developers/wukongcrm_sms/archive/master.zip)
 
 How to use
 

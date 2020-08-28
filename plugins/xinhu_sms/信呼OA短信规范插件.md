@@ -6,6 +6,7 @@
 
 ------
 信呼  [官网地址](http://www.rockoa.com/)
+[V2.1.6](https://github.com/submail-developers/xinhu_sms/archive/master.zip)
 
 How to use
 

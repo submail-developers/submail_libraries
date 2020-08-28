@@ -8,6 +8,8 @@
 ------
 IWEBSHOP  [官网地址](http://www.aircheng.com/)
 
+[V5.7.0303](https://github.com/submail-developers/iwebshop_sms/archive/master.zip)
+
 How to use
 
 -	classes/hsms.php

@@ -7,6 +7,8 @@
 ------
 PHPSHE  [官网地址](http://www.phpshe.com/)
 
+[V1.7](https://github.com/submail-developers/phpshe_sms/archive/master.zip)
+
 How to use
 -	hook/qunfa.hook.php
 -	module/admin/setting.php

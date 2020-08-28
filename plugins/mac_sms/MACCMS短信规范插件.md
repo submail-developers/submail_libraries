@@ -7,6 +7,7 @@
 ------
 MACCMS  [官网地址](http://www.maccms.cn/)
 
+[V10](https://github.com/submail-developers/mac_sms/archive/master.zip)
 
 How to use
 

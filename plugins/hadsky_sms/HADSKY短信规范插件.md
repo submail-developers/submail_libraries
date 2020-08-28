@@ -7,6 +7,9 @@
 ------
 HADSKY [官网地址](https://www.hadsky.com)
 
+[v7.3.1](https://github.com/submail-developers/hadsky_sms/archive/master.zip)
+
+
 How to use
 -	app/hadskycloudserver/phpscript/sms_send.php
 -	app/hadskycloudserver/setting.hst

@@ -7,6 +7,9 @@
 ------
 Laysns  [官网地址](https://bbs.laysns.com/)
 
+[V2.1](https://github.com/submail-developers/laysns_sms/archive/master.zip)
+
+
 How to use
 
 -	application/admin/view/system_sms.html

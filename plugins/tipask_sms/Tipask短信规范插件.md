@@ -6,6 +6,8 @@
 
 Tipask  [官网地址](https://www.tipask.com/)
 
+[V3.5](https://github.com/submail-developers/tipask_sms/archive/master.zip)
+
 ------
 -	app/Services/SmsService.php
 -	config/submailsms.php
